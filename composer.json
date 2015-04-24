@@ -3,7 +3,8 @@
     "description": "Pagination for Nette framework (a.k.a. VisualPaginator)",
     "require": {
         "latte/latte": "~2.1",
-        "nette/application": "~2.1"
+        "nette/application": "~2.1",
+        "nette/utils": "~2.1"
     },
     "authors": [
         {
