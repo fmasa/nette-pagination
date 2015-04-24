@@ -1,0 +1,15 @@
+{snippet pagination}
+	{if $paginator->pageCount > 1}
+		<ul class="pagination">
+			<li n:if="$paginator->firstPage < $paginator->page - 5"><a n:href="this page => $paginator->firstPage">{$paginator->firstPage}</a></li>
+			<li n:for="$page = max(1, $paginator->page - 5); $page <= min($paginator->pageCount, $paginator->page + 5); $page++" n:class="$page == $paginator->page ? current">
+				{if $page != $paginator->page}
+					<a n:href="this page => $page" n:class="($page == $paginator->page + 1) ? nextPage">{$page}</a>
+				{else}
+					{$page}
+				{/if}
+			</li>
+			<li n:if="$paginator->lastPage > $paginator->page + 5"><a n:href="this page => $paginator->lastPage">{$paginator->lastPage}</a></li>
+		</ul>
+	{/if}
+{/snippet}

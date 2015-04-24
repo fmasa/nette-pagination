@@ -1,0 +1,20 @@
+{
+    "name": "fmasa/nette-pagination",
+    "description": "Pagination for Nette framework (a.k.a. VisualPaginator)",
+    "require": {
+        "latte/latte": "~2.1",
+        "nette/application": "~2.1"
+    },
+    "authors": [
+        {
+            "name": "František Maša",
+            "email": "frantisekmasa1@gmail.com"
+        }
+    ],
+    "autoload": {
+      "classmap": [
+        "src/fmasa/Controls/Pagination.php"
+      ]
+    },
+    "minimum-stability": "stable"
+}
